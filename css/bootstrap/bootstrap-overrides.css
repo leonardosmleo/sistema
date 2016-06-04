@@ -271,7 +271,7 @@ textarea::-webkit-input-placeholder {
 .pagination.inverse span:hover {
 	background-color: #000;
 }
-.pagination.inverse > li.active > a {
+.pagination.inverse > .active > a {
 	color: #3b9ff3;
 	background-color: #212b36;
 	border-right-color: #212b36;
@@ -301,7 +301,7 @@ textarea::-webkit-input-placeholder {
 	text-transform: uppercase;
 	font-size: 11px;
 	vertical-align: top !important;
-	border-bottom: 0px !important;
+	border-bottom: 0px;
 }
 .table td{
 	color: #526273;
