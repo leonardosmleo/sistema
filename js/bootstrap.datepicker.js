@@ -553,7 +553,7 @@
 									date: this.viewDate
 								});
 							} else {
-								year = parseInt(target.text(), 10)||0;
+								var year = parseInt(target.text(), 10)||0;
 								this.viewDate.setUTCFullYear(year);
 								this.element.trigger({
 									type: 'changeYear',
