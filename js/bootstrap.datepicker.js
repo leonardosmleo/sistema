@@ -475,9 +475,9 @@
 		},
 
 		updateNavArrows: function() {
-			var d = new Date(this.viewDate),
-				year = d.getUTCFullYear(),
-				month = d.getUTCMonth();
+			var d = new Date(this.viewDate);
+				var year = d.getUTCFullYear();
+				var month = d.getUTCMonth();
 			switch (this.viewMode) {
 				case 0:
 					if (this.startDate !== -Infinity && year <= this.startDate.getUTCFullYear() && month <= this.startDate.getUTCMonth()) {
@@ -553,7 +553,7 @@
 									date: this.viewDate
 								});
 							} else {
-								var year = parseInt(target.text(), 10)||0;
+								year = parseInt(target.text(), 10)||0;
 								this.viewDate.setUTCFullYear(year);
 								this.element.trigger({
 									type: 'changeYear',
@@ -841,8 +841,9 @@
 			if (date instanceof Date) return date;
 			if (/^[\-+]\d+[dmwy]([\s,]+[\-+]\d+[dmwy])*$/.test(date)) {
 				var part_re = /([\-+]\d+)([dmwy])/,
-					parts = date.match(/([\-+]\d+)([dmwy])/g),
-					part, dir;
+					parts = date.match(/([\-+]\d+)([dmwy])/g);
+					var part;
+					var dir;
 				date = new Date();
 				for (var i=0; i<parts.length; i++) {
 					part = part_re.exec(parts[i]);
