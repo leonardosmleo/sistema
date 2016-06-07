@@ -9,10 +9,7 @@
     if(isset($_SESSION['usuario'])){
         header("Location: principal.php");
     }
-    // session_start();
-    // if(isset($_SESSION['usuario'])){
-    //     header("Location: principal.php");
-    // }
+   
 ?>
 <!DOCTYPE html>
 <html class="login-bg" lang="es">

@@ -525,7 +525,7 @@ rangy.createModule("DomUtil", function(api, module) {
     function comparePoints(nodeA, offsetA, nodeB, offsetB) {
         // See http://www.w3.org/TR/DOM-Level-2-Traversal-Range/ranges.html#Level-2-Range-Comparing
         var nodeC, root, childA, childB, n;
-        if (nodeA == nodeB) {
+        if (nodeA === nodeB) {
 
             // Case 1: nodes are the same
             return offsetA === offsetB ? 0 : (offsetA < offsetB) ? -1 : 1;
